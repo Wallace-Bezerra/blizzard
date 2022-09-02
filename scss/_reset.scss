@@ -4,4 +4,24 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background-color: $neutral-100;
+    color: #e5e5e5;
+}
+a {
+    display: block;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+button {
+    cursor: pointer;
 }
