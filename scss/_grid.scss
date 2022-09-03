@@ -3,5 +3,8 @@
   max-width: 1330px;
   padding-inline: 15px;
   margin: 0 auto;
-  border: 4px solid red;
+
+  @media(max-width: 1440px) {
+    max-width: 1240px;
+  }
 }

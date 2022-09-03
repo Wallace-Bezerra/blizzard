@@ -6,22 +6,30 @@
     list-style: none;
     font-family: "Poppins", sans-serif;
 }
+
 html {
     font-size: 62.5%;
 }
+
 body {
     font-size: 1.6rem;
     background-color: $neutral-100;
     color: #e5e5e5;
+    // background-image: url(../assets/banner-slide-01.jpg);
+    // background-repeat: no-repeat;
+    // background-position: top;
 }
+
 a {
     display: block;
     color: inherit;
 }
+
 img {
     max-width: 100%;
-    display: block;
+    display: inline-block;
 }
+
 button {
     cursor: pointer;
 }

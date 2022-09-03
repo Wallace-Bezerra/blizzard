@@ -1,1 +1,1 @@
-"use strict";console.log("buttons1");var teste=0,teste=function(){console.log("ola")};console.log("modal2"),console.log("modal3");
+"use strict";var slide_hero=new Swiper(".slide-principal",{effect:"fade"});

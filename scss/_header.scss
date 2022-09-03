@@ -1,0 +1,61 @@
+header {
+    border-bottom: 1.5px solid hsla(0, 0%, 100%, 0.1);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: 96px;
+        gap: 112px;
+
+        .logo {
+            position: relative;
+
+            img {
+                height: 40px;
+                width: 115px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -26.3px;
+                left: 0;
+                width: 43px;
+                border-bottom: 1.5px solid $primary-default;
+            }
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .menu-links {
+                display: flex;
+                gap: 34px;
+                align-items: center;
+
+                li {
+                    a {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+
+                        &>img {
+                            margin-left: 14px;
+                        }
+                    }
+                }
+
+            }
+
+            .buttons {
+                display: flex;
+                gap: 16px;
+            }
+        }
+    }
+}
