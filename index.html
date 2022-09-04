@@ -7,8 +7,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/plugins.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Gulp</title>
@@ -17,9 +16,9 @@
 <body>
   <header>
     <div class="container">
-      <div class="logo">
+      <a href="#" class="logo">
         <img src="./assets/logo.svg" alt="Logo Blizzard">
-      </div>
+      </a>
       <nav>
         <ul class="menu-links">
           <li><a href="#">Jogos <img src="./assets/arrow-down.svg" alt=""></a></li>
@@ -37,12 +36,34 @@
   </header>
 
   <section class="s-hero">
-    <div class="slide-principal ">
+
+    <div class="slide-thumbnail">
       <div class="swiper-wrapper ">
+        <div class="swiper-slide">
+          <img src="./assets/logo-small-diablo-iv.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/logo-small-heathstone.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/logo-small-ww.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/logo-small-diablo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/logo-small-starfield.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-principal">
+      <div class="swiper-wrapper ">
+
         <div class="swiper-slide slide-01 ">
           <div class="container">
             <div class="left-content">
-              <h2>Retorna à escuridão com o game Diablo IV</h2>
+              <h2>Retorne à escuridão com o game Diablo IV</h2>
               <p>O retorno de Lilith traz uma era de escuridão e sofrimento</p>
               <a href="#" class="btn btn-primary"><img src="./assets/icon-perfil.svg" alt="">Jogue agora</a>
             </div>
@@ -130,27 +151,53 @@
             </div>
           </div>
         </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="s-games">
+    <div class="container">
+      <div class="top">
+        <div class="left-top">
+          <span>Games</span>
+          <h2>Jogos exclusivos</h2>
+        </div>
+
+        <div class="rigth-top">
+
+          <ul class="filtro">
+            <li>
+              <a href="#">
+                <img src="./assets/icon-logo-battle.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/nitendo.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/xbox.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/playstation.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="btn-all-games"><img src="./assets/icon-group-blue.svg" alt="">Ver todos jogos</a>
+
+        </div>
       </div>
     </div>
   </section>
 
 
-
-
-
-  <!-- <div class="container">
-    Wallace
-  </div>
-
-  <a href="" class="btn btn-primary">
-    <img src="./assets/icon-perfil.svg" alt="">
-    Logar
-  </a>
-  <a href="" class="btn btn-outline">
-    Criar conta
-  </a>
-
-  <a href="" class="game-card">
+  <!-- <a href="" class="game-card">
     <div class="image">
       <img class="logo-card" src="./assets/card-diablo-ii.png" alt="">
       <img class="image-card" src="./assets/card-game-01.jpg" alt="">

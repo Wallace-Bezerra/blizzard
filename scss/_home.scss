@@ -1,42 +1,125 @@
 .s-hero {
+    position: relative;
+    .slide-thumbnail {
+        z-index: 2;
+        position: absolute;
+        top: 238px;
+        left: 30px;
+        .swiper-wrapper {
+            .swiper-slide {
+                cursor: pointer;
+                height: 48px !important;
+                opacity: 0.4;
+                filter: grayscale(100%);
+                &-thumb-active {
+                    opacity: 1;
+                    filter: grayscale(0%);
+                }
+            }
+        }
+    }
+
     .slide-principal {
         width: 100%;
         height: 736px;
 
         .swiper-wrapper {
-
             .swiper-slide {
+                padding-top: 173px;
                 &.slide-01 {
                     background: url(../assets/banner-slide-01.jpg) no-repeat center;
+                    background-size: cover;
                 }
 
                 &.slide-02 {
                     background: url(../assets/banner-slide-02.jpg) no-repeat center;
+                    background-size: cover;
                 }
 
                 &.slide-03 {
                     background: url(../assets/banner-slide-03.jpg) no-repeat center;
+                    background-size: cover;
                 }
 
                 .container {
-                    padding-top: 207px;
+                    padding-right: 0;
+                    display: flex;
+                    justify-content: space-between;
 
                     .left-content {
-                        max-width: 562px;
+                        margin-left: 208px;
+                        padding-top: 34px;
+                        max-width: 626px;
 
                         h2 {
                             font-weight: 700;
                             font-size: 64px;
                             line-height: 110.2%;
+                            margin-bottom: 16px;
+                            width: 100%;
+                        }
+                        p {
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 27px;
+                            letter-spacing: -0.005em;
+                            margin-bottom: 32px;
+                        }
+                        a {
+                            img {
+                                max-width: 24px;
+                                height: 24px;
+                            }
+                            padding: 14px 32px;
+                            height: 52px;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
                         }
                     }
 
                     .rigth-content {
+                        display: flex;
+                        align-items: flex-end;
+                        flex-direction: column;
+                        gap: 112px;
+                        .logo {
+                            overflow: hidden;
+                            width: 280px;
+                            height: 180px;
+                        }
                         .video {
+                            max-width: 280px;
+                            width: 100%;
+                            height: 158px;
+                            span {
+                                text-align: end;
+                                display: block;
+                                font-weight: 600;
+                                font-size: 13px;
+                                line-height: 20px;
+                                margin-bottom: 16px;
+                                text-transform: uppercase;
+                            }
                             a {
+                                position: relative;
                                 .thumb {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    transition: opacity 0.5s;
+                                    img {
+                                        border-radius: 12px;
+                                    }
+                                    &:hover {
+                                        &.default {
+                                            opacity: 0;
+                                        }
+                                        &.hover {
+                                            opacity: 1;
+                                        }
+                                    }
                                     &.default {
-                                        position: relative;
                                         display: flex;
                                         align-items: center;
                                         justify-content: center;
@@ -49,8 +132,18 @@
                                             width: 50px;
                                             height: 50px;
                                             border-radius: 50%;
-                                            background: linear-gradient(136.72deg, rgba(7, 7, 10, 0.86) 19.22%, rgba(15, 16, 22, 0.5) 76.59%);
+                                            background: linear-gradient(
+                                                136.72deg,
+                                                rgba(7, 7, 10, 0.86) 19.22%,
+                                                rgba(15, 16, 22, 0.5) 76.59%
+                                            );
                                             backdrop-filter: blur(3px);
+                                        }
+                                    }
+                                    &.hover {
+                                        opacity: 0;
+                                        img {
+                                            height: 158px;
                                         }
                                     }
                                 }
@@ -60,6 +153,56 @@
                 }
             }
         }
+    }
+}
 
+.s-games {
+    padding-top: 85px;
+    padding-bottom: 110px;
+    .container {
+        .top {
+            display: flex;
+            align-items: center;
+            height: 70px;
+
+            .left-top {
+                gap: 171px;
+                display: flex;
+                max-width: 399px;
+                span {
+                    margin-top: 11px;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 22px;
+                    text-transform: uppercase;
+                    color: #8f9199;
+                }
+                h2 {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 110.2%;
+                }
+            }
+            .rigth-top {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-self: flex-end;
+                .filtro {
+                    margin-left: 159px;
+                    display: flex;
+                    gap: 24px;
+                }
+                .btn-all-games {
+                    color: $primary-default;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
     }
 }
