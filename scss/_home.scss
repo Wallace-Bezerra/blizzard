@@ -192,6 +192,32 @@
                     margin-left: 159px;
                     display: flex;
                     gap: 24px;
+                    a {
+                        img {
+                            height: 20px;
+                        }
+                        &.active {
+                            position: relative;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                bottom: -4px;
+                                left: 0;
+                                width: 100%;
+                                border: 1px solid $primary-default;
+                                animation: show 0.9s forwards;
+                            }
+                            @keyframes show {
+                                from {
+                                    opacity: 0;
+                                }
+                                to {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
                 }
                 .btn-all-games {
                     color: $primary-default;
@@ -201,6 +227,19 @@
                     img {
                         margin-right: 10px;
                     }
+                }
+            }
+        }
+        .tab-games-container {
+            .tab-pane-games {
+                display: none;
+                padding-top: 87px;
+                // display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                // grid-template-columns: repeat(4, 1fr);
+                gap: 32px 48px;
+                &.active {
+                    display: grid;
                 }
             }
         }
