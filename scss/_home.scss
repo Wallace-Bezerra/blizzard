@@ -1,16 +1,19 @@
 .s-hero {
     position: relative;
+
     .slide-thumbnail {
         z-index: 2;
         position: absolute;
         top: 238px;
         left: 30px;
+
         .swiper-wrapper {
             .swiper-slide {
                 cursor: pointer;
                 height: 48px !important;
                 opacity: 0.4;
                 filter: grayscale(100%);
+
                 &-thumb-active {
                     opacity: 1;
                     filter: grayscale(0%);
@@ -26,6 +29,7 @@
         .swiper-wrapper {
             .swiper-slide {
                 padding-top: 173px;
+
                 &.slide-01 {
                     background: url(../assets/banner-slide-01.jpg) no-repeat center;
                     background-size: cover;
@@ -58,6 +62,7 @@
                             margin-bottom: 16px;
                             width: 100%;
                         }
+
                         p {
                             font-weight: 400;
                             font-size: 18px;
@@ -65,11 +70,13 @@
                             letter-spacing: -0.005em;
                             margin-bottom: 32px;
                         }
+
                         a {
                             img {
                                 max-width: 24px;
                                 height: 24px;
                             }
+
                             padding: 14px 32px;
                             height: 52px;
                             font-weight: 600;
@@ -83,15 +90,18 @@
                         align-items: flex-end;
                         flex-direction: column;
                         gap: 112px;
+
                         .logo {
                             overflow: hidden;
                             width: 280px;
                             height: 180px;
                         }
+
                         .video {
                             max-width: 280px;
                             width: 100%;
                             height: 158px;
+
                             span {
                                 text-align: end;
                                 display: block;
@@ -101,24 +111,30 @@
                                 margin-bottom: 16px;
                                 text-transform: uppercase;
                             }
+
                             a {
                                 position: relative;
+
                                 .thumb {
                                     position: absolute;
                                     left: 0;
                                     top: 0;
                                     transition: opacity 0.5s;
+
                                     img {
                                         border-radius: 12px;
                                     }
+
                                     &:hover {
                                         &.default {
                                             opacity: 0;
                                         }
+
                                         &.hover {
                                             opacity: 1;
                                         }
                                     }
+
                                     &.default {
                                         display: flex;
                                         align-items: center;
@@ -132,16 +148,16 @@
                                             width: 50px;
                                             height: 50px;
                                             border-radius: 50%;
-                                            background: linear-gradient(
-                                                136.72deg,
-                                                rgba(7, 7, 10, 0.86) 19.22%,
-                                                rgba(15, 16, 22, 0.5) 76.59%
-                                            );
+                                            background: linear-gradient(136.72deg,
+                                                    rgba(7, 7, 10, 0.86) 19.22%,
+                                                    rgba(15, 16, 22, 0.5) 76.59%);
                                             backdrop-filter: blur(3px);
                                         }
                                     }
+
                                     &.hover {
                                         opacity: 0;
+
                                         img {
                                             height: 158px;
                                         }
@@ -159,6 +175,7 @@
 .s-games {
     padding-top: 85px;
     padding-bottom: 110px;
+
     .container {
         .top {
             display: flex;
@@ -169,6 +186,7 @@
                 gap: 171px;
                 display: flex;
                 max-width: 399px;
+
                 span {
                     margin-top: 11px;
                     font-weight: 600;
@@ -177,25 +195,30 @@
                     text-transform: uppercase;
                     color: #8f9199;
                 }
+
                 h2 {
                     font-weight: 700;
                     font-size: 32px;
                     line-height: 110.2%;
                 }
             }
+
             .rigth-top {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-self: flex-end;
+
                 .filtro {
                     margin-left: 159px;
                     display: flex;
                     gap: 24px;
+
                     a {
                         img {
                             height: 20px;
                         }
+
                         &.active {
                             position: relative;
 
@@ -208,10 +231,12 @@
                                 border: 1px solid $primary-default;
                                 animation: show 0.9s forwards;
                             }
+
                             @keyframes show {
                                 from {
                                     opacity: 0;
                                 }
+
                                 to {
                                     opacity: 1;
                                 }
@@ -219,17 +244,20 @@
                         }
                     }
                 }
+
                 .btn-all-games {
                     color: $primary-default;
                     font-weight: 600;
                     font-size: 16px;
                     line-height: 24px;
+
                     img {
                         margin-right: 10px;
                     }
                 }
             }
         }
+
         .tab-games-container {
             .tab-pane-games {
                 display: none;
@@ -238,15 +266,18 @@
                 grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
                 // grid-template-columns: repeat(4, 1fr);
                 gap: 32px 48px;
+
                 &.active {
                     display: grid;
                     animation: fade 0.8s forwards;
                 }
+
                 @keyframes fade {
                     from {
                         opacity: 0;
                         transform: translateY(40px);
                     }
+
                     to {
                         opacity: 1;
                         transform: translateY(0px);
@@ -266,52 +297,63 @@
     height: 852px;
     position: relative;
     overflow: hidden;
+
     .overlay {
         background: radial-gradient(61.91% 61.91% at 58.62% 25.94%, #030303 0%, rgba(196, 196, 196, 0) 100%);
         mix-blend-mode: normal;
     }
+
     .container {
         display: flex;
 
         .left-area {
             padding-top: 132px;
             max-width: 312px;
+
             .logo {
                 margin-bottom: 30px;
             }
+
             h2 {
                 font-weight: 700;
                 font-size: 32px;
                 line-height: 110.2%;
                 margin-bottom: 30px;
             }
+
             ul {
                 margin-bottom: 42px;
+
                 li {
                     display: flex;
                     gap: 16px;
+
                     &:not(:last-child) {
                         margin-bottom: 24px;
                     }
                 }
             }
+
             a {
                 margin-bottom: 49px;
                 align-items: flex-end;
             }
+
             .aplicativo-mobile {
                 display: flex;
                 gap: 18px;
+
                 span {
                     text-decoration: underline;
                     cursor: pointer;
                 }
             }
         }
+
         .right-area {
             position: absolute;
             top: 1;
-            left: 463px;
+            left: 416px;
             width: 1053.33px;
             height: 593.96px;
 
@@ -319,11 +361,13 @@
                 position: absolute;
                 top: 99.7px;
                 left: 90px;
+                animation: float 8s ease-in alternate;
             }
+
             .image2 {
                 position: absolute;
-                top: 400.19px;
-                left: 443px;
+                top: 399px;
+                left: 297px;
             }
         }
     }
