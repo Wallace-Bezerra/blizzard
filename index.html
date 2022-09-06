@@ -7,10 +7,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/plugins.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Gulp</title>
+  <title>Blizzard</title>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
       </a>
       <nav>
         <ul class="menu-links">
-          <li><a href="#">Jogos <img src="./assets/arrow-down.svg" alt=""></a></li>
-          <li><a href="#">Esportes <img src="./assets/arrow-down.svg" alt=""></a></li>
+          <li><a href="#" class="js-games">Jogos <img src="./assets/arrow-down.svg" alt=""></a></li>
+          <li><a href="#" class="js-sports">Esportes <img src="./assets/arrow-down.svg" alt=""></a></li>
           <li><a href="#">Loja</a></li>
           <li><a href="#">Notícias</a></li>
           <li><a href="#">Suporte</a></li>
@@ -31,9 +32,164 @@
           <a href="#" class="btn btn-outline">Criar conta</a>
           <a href="#" class="btn btn-primary"><img src="./assets/icon-perfil.svg" alt="">Login</a>
         </div>
+        <div class="menu-mobile">
+          <img src="./assets/menu-mobile.svg" alt="">
+        </div>
       </nav>
     </div>
   </header>
+
+  <!-- <section class="menu-games">
+    <div class="area-menu container">
+      <ul class="pane-games">
+        <li>
+          <a href="#">
+            <img src="./assets/logo-xs-diablo-ii.png" alt="">
+            <span>Diablo® II ressurected</span>
+          </a>
+        </li>
+
+        <li><a href="">
+            <img src="./assets/logo-xs-overwatch-2.png" alt="">
+            <span>Overwatch® 2</span>
+          </a>
+
+        </li>
+
+        <li>
+          <a href="">
+            <img src="./assets/logo-xs-ww.png" alt="">
+            <span>World of Warcraft®</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-xs-heartstone.png" alt="">
+            <span>Hearthstone®</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-xs-heroes-storm.png" alt="">
+            <span>Heroes of the storm®</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-xs-w-ii.png" alt="">
+            <span>Warcraft® III Reforged</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-xs-diablo-iv.png" alt="">
+            <span>Diablo® IV</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-xs-diablo-imortal.png" alt="">
+            <span>Diablo® Immortal</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-xs-diablo-iii.png" alt="">
+            <span>Diablo® III</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-xs-starcraft.png" alt="">
+            <span>StarCraft® II</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-starcraft-ii.png" alt="">
+            <span>StarCraft® Remastered</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-xs-arcade.png" alt="">
+            <span>Arcade da Blizzard®</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <ul>
+        <li>
+          <a href="">
+            <img src="./assets/icon-group-blue.svg" alt="">
+            <span>Ver todos jogos</span>
+          </a>
+        </li>
+        <li><a href="">
+            <img src="./assets/icon-battlenet.svg" alt="">
+            <span>Aplicativo Battle.net</span>
+          </a></li>
+        <li><a href="">
+            <img src="./assets/icon-downloads.svg" alt="">
+            <span>Downloads</span>
+          </a></li>
+        <li><a href="">
+            <img src="./assets/icon-forum.svg" alt="">
+            <span>Fóruns dos jogos</span>
+          </a></li>
+      </ul>
+    </footer>
+  </section>
+
+  <section class="menu-sports">
+    <div class="area-menu container">
+      <ul class="pane-games">
+        <li>
+          <a href="#">
+            <img src="./assets/logo-heathstone-masters.png" alt="">
+            <span>Hearthstone®<br>masters</span>
+          </a>
+        </li>
+
+        <li><a href="">
+            <img src="./assets/logo-arena-ww.png" alt="">
+            <span>Campeonato Mundial de Arena WoW®</span>
+          </a>
+
+        </li>
+
+        <li>
+          <a href="">
+            <img src="./assets/logo-starfield-wc.png" alt="">
+            <span>StarCraft® II<br>WCS</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-overwatch-league.png" alt="">
+            <span>Copa Mundial de Overwatch®</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./assets/logo-overwatch-league-02.png" alt="">
+            <span>Liga de<br>Overwatch®</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <ul>
+        <li>
+          <a href="">
+            <img src="./assets/icon-torneio.svg" alt="">
+            <span>Torneios da comunidade</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </section>
 
   <section class="s-hero">
 
@@ -792,7 +948,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <script src="./js/plugins.js"> </script>
   <script src="./js/all.js"></script>

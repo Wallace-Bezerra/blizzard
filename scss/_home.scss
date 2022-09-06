@@ -148,11 +148,9 @@
                                             width: 50px;
                                             height: 50px;
                                             border-radius: 50%;
-                                            background: linear-gradient(
-                                                136.72deg,
-                                                rgba(7, 7, 10, 0.86) 19.22%,
-                                                rgba(15, 16, 22, 0.5) 76.59%
-                                            );
+                                            background: linear-gradient(136.72deg,
+                                                    rgba(7, 7, 10, 0.86) 19.22%,
+                                                    rgba(15, 16, 22, 0.5) 76.59%);
                                             backdrop-filter: blur(3px);
                                         }
                                     }
@@ -382,8 +380,9 @@
     z-index: 5;
     pointer-events: none;
     opacity: 0;
-    transform: translateY(30px);
+
     transition: all 0.4s;
+
     .overlay {
         background-color: hsla(0, 0%, 0%, 0.5);
         height: 100vh;
@@ -395,6 +394,8 @@
         z-index: 6;
 
         .box {
+            transition: transform .4s;
+            transform: translateY(30px);
             position: relative;
             z-index: 7;
             background-color: $neutral-100;
@@ -415,6 +416,7 @@
                 margin-bottom: 40px;
                 width: 166.53px;
             }
+
             form {
                 display: flex;
                 flex-direction: column;
@@ -430,13 +432,16 @@
                     border-radius: 4px;
                     border: none;
                     outline-color: $primary-default;
+
                     &:not(:first-child) {
                         margin-top: 16px;
                     }
+
                     &::placeholder {
                         opacity: 0.6;
                     }
                 }
+
                 button {
                     margin-top: 24px;
                     border: none;
@@ -446,14 +451,17 @@
                     height: 52px;
                 }
             }
+
             .others-connect {
                 text-align: center;
                 margin-top: 41px;
+
                 ul {
                     margin-top: 16px;
                     display: flex;
                     justify-content: center;
                     gap: 16px;
+
                     li {
                         a {
                             background: #ffffff;
@@ -464,6 +472,7 @@
                             align-items: center;
                             justify-content: center;
                             transition: opacity 0.4s;
+
                             &:hover {
                                 opacity: 0.8;
                             }
@@ -471,24 +480,29 @@
                     }
                 }
             }
+
             .user-account {
                 margin-top: 35px;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 24px;
                 text-align: center;
+
                 p {
                     margin-bottom: 16px;
                 }
+
                 a {
                     display: inline-block;
                     color: $primary-default;
                     text-decoration: underline;
+
                     &:hover {
                         opacity: 0.8;
                     }
                 }
             }
+
             .close {
                 position: absolute;
                 top: 24px;
@@ -496,15 +510,21 @@
                 width: 32px;
                 height: 32px;
                 cursor: pointer;
+
                 img {
                     padding: 8px;
                 }
             }
         }
     }
+
     &.active {
         pointer-events: all;
         opacity: 1;
-        transform: translateY(0px);
+
+        .box {
+            transform: translateY(0px);
+        }
+
     }
 }
