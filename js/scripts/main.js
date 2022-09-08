@@ -2,7 +2,7 @@ var slide_thumbnail = new Swiper(".slide-thumbnail", {
     slidesPerView: 5,
     direction: 'vertical',
     spaceBetween: 20,
-    watchSlidesProgress: true
+    watchSlidesProgress: true,
 });
 
 var slide_hero = new Swiper(".slide-principal", {

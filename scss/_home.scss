@@ -46,7 +46,6 @@
                 }
 
                 .container {
-                    padding-right: 0;
                     display: flex;
                     justify-content: space-between;
 
@@ -85,7 +84,7 @@
                         }
                     }
 
-                    .rigth-content {
+                    .right-content {
                         display: flex;
                         align-items: flex-end;
                         flex-direction: column;
@@ -170,6 +169,60 @@
             }
         }
     }
+
+    @include responsive(1120px) {
+        .slide-thumbnail {
+            top: 634px;
+            left: 14px;
+
+            .swiper-wrapper {
+                flex-direction: row;
+                gap: 20px;
+
+                .swiper-slide {
+                    margin: 0px !important;
+                    width: auto;
+                }
+            }
+        }
+
+        .slide-principal {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .container {
+                        .left-content {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(910px) {
+        .slide-principal {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .container {
+                        .right-content {
+                            position: absolute;
+                            right: 84px;
+                            top: 116px;
+                            gap: 205px;
+
+                            .video {
+                                span {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
 }
 
 .s-games {
@@ -203,7 +256,7 @@
                 }
             }
 
-            .rigth-top {
+            .right-top {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
