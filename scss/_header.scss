@@ -15,7 +15,7 @@ header {
 
             img {
                 height: 40px;
-                width: 115px;
+                // width: 115px;
             }
 
             &::after {
@@ -44,12 +44,11 @@ header {
                         font-size: 14px;
                         line-height: 21px;
 
-                        &>img {
+                        & > img {
                             margin-left: 14px;
                         }
                     }
                 }
-
             }
 
             .buttons {
@@ -86,13 +85,20 @@ header {
     @include responsive(600px) {
         .container {
             justify-content: space-between;
-
+            height: 80px;
             nav {
                 width: auto;
                 justify-content: start;
 
                 .buttons {
                     display: none;
+                }
+            }
+
+            .logo {
+                &::after {
+                    bottom: -18.3px;
+                    // left: 14px;
                 }
             }
         }
@@ -104,7 +110,7 @@ header {
     opacity: 0;
     pointer-events: none;
     transform: translateY(-80px);
-    transition: all .4s;
+    transition: all 0.4s;
     position: absolute;
     z-index: 3;
     background: linear-gradient(180deg, #020203 0%, rgba(14, 17, 23, 0.92) 96.35%, rgba(14, 17, 23, 0.9) 100%);

@@ -147,9 +147,11 @@
                                             width: 50px;
                                             height: 50px;
                                             border-radius: 50%;
-                                            background: linear-gradient(136.72deg,
-                                                    rgba(7, 7, 10, 0.86) 19.22%,
-                                                    rgba(15, 16, 22, 0.5) 76.59%);
+                                            background: linear-gradient(
+                                                136.72deg,
+                                                rgba(7, 7, 10, 0.86) 19.22%,
+                                                rgba(15, 16, 22, 0.5) 76.59%
+                                            );
                                             backdrop-filter: blur(3px);
                                         }
                                     }
@@ -173,7 +175,7 @@
     @include responsive(1120px) {
         .slide-thumbnail {
             top: 634px;
-            left: 14px;
+            left: 26px;
 
             .swiper-wrapper {
                 flex-direction: row;
@@ -203,10 +205,18 @@
         .slide-principal {
             .swiper-wrapper {
                 .swiper-slide {
+                    &.slide-02 {
+                        .left-content {
+                            h2 {
+                                font-size: 56px;
+                                max-width: 447px;
+                            }
+                        }
+                    }
                     .container {
                         .right-content {
                             position: absolute;
-                            right: 84px;
+                            right: 30px;
                             top: 116px;
                             gap: 205px;
 
@@ -219,9 +229,58 @@
                     }
                 }
             }
-
         }
+    }
+    @include responsive(700px) {
+        .slide-principal {
+            height: 622px;
+            .swiper-wrapper {
+                .swiper-slide {
+                    &.slide-01 {
+                        background-position-x: -318px;
+                    }
+                    &.slide-02 {
+                        background-position-x: -566px;
+                    }
+                    &.slide-03 {
+                        background-position-x: -582px;
+                        .container {
+                            .left-content {
+                                h2 {
+                                    font-size: 38px;
+                                }
+                            }
+                        }
+                    }
+                    padding-top: 131px;
+                    .container {
+                        .left-content {
+                            // max-width: 283px;
 
+                            h2 {
+                                font-size: 40px;
+                            }
+                            p {
+                                max-width: 289px;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 27px;
+                                letter-spacing: -0.005em;
+                            }
+                            a {
+                                padding: 9px 26px;
+                            }
+                        }
+                        .right-content {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .slide-thumbnail {
+            top: 530px;
+        }
     }
 }
 
@@ -339,6 +398,37 @@
             }
         }
     }
+    @include responsive(1000px) {
+        .container {
+            .top {
+                gap: 134px;
+                .left-top {
+                    span {
+                        display: none;
+                    }
+                }
+                .right-top {
+                    .filtro {
+                        margin: 0;
+                    }
+                }
+            }
+            .tab-games-container {
+                .tab-pane-games {
+                    justify-items: center;
+                }
+            }
+        }
+    }
+}
+@include responsive(720px) {
+    .container {
+        .tab-games-container {
+            .tab-pane-games {
+                justify-items: center;
+            }
+        }
+    }
 }
 
 .s-download {
@@ -447,7 +537,7 @@
         z-index: 6;
 
         .box {
-            transition: transform .4s;
+            transition: transform 0.4s;
             transform: translateY(30px);
             position: relative;
             z-index: 7;
@@ -578,6 +668,5 @@
         .box {
             transform: translateY(0px);
         }
-
     }
 }
