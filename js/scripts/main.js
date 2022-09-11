@@ -10,9 +10,9 @@ var slide_hero = new Swiper(".slide-principal", {
     thumbs: {
         swiper: slide_thumbnail,
     },
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false
-    // }
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    }
 });
 
