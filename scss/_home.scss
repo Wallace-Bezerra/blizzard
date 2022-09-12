@@ -172,6 +172,33 @@
         }
     }
 
+    .swiper-progress-bar {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        .slide-progress-bar {
+            display: block;
+            width: 0px;
+            height: 100%;
+            background-color: $primary-default;
+            opacity: 0;
+        }
+        &.active {
+            .slide-progress-bar {
+                opacity: 1;
+            }
+        }
+        &.animate {
+            .slide-progress-bar {
+                width: 100%;
+                transition: width 5s linear;
+            }
+        }
+    }
+
     @include responsive(1120px) {
         .slide-thumbnail {
             top: 634px;
